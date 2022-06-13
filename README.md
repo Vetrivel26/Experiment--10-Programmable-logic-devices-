@@ -17,7 +17,6 @@ Figure -01 PROM
  
 ### Procedure
 ~~~
-/* 
 1.Start the module using module ten().
 
 2.Declare the inputs clock and outputs required.
@@ -29,13 +28,12 @@ Figure -01 PROM
 5.End module.
 
 6.Generate RTL and TIMINIG DIAGRAM. 
-*/
 ~~~
 
 
 
 ### PROGRAM 
-/*
+~~~
 Program for PROM 
 Developed by: VETRIVEL.S
 RegisterNumber:  212221240060
@@ -68,8 +66,7 @@ out = Rom[addr];
 end
 endmodule
 
- 
-*/
+ ~~~
 
 
 
