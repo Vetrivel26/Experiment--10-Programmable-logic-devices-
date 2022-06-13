@@ -16,15 +16,59 @@ Figure -01 PROM
  
  
 ### Procedure
-/* write all the steps invloved */
+~~~
+/* 
+1.Start the module using module ten().
+
+2.Declare the inputs clock and outputs required.
+
+3.Begin tha logic with negative edge clock.
+
+4.Assign differnt values for different address.
+
+5.End module.
+
+6.Generate RTL and TIMINIG DIAGRAM. 
+*/
+~~~
 
 
 
 ### PROGRAM 
 /*
 Program for PROM 
-Developed by: 
-RegisterNumber:  
+Developed by: VETRIVEL.S
+RegisterNumber:  212221240060
+
+module ten(out,addr,clk);
+output[15:0] out;
+input[3:0] addr;
+input clk;
+reg [15:0] out;
+reg [15:0] Rom [15:0];
+always @ (negedge clk)
+begin 
+Rom [0] = 16'h 5601;
+Rom [1] = 16'h 5602;
+Rom [2] = 16'h 5603;
+Rom [3] = 16'h 5604;
+Rom [4] = 16'h 5605;
+Rom [5] = 16'h 5606;
+Rom [6] = 16'h 5607;
+Rom [7] = 16'h 5608;
+Rom [8] = 16'h 5609;
+Rom [9] = 16'h 5610;
+Rom [10] = 16'h 5611;
+Rom [11] = 16'h 5612;
+Rom [12] = 16'h 5613;
+Rom [13] = 16'h 5614;
+Rom [14] = 16'h 5615;
+Rom [15] = 16'h 5616;
+out = Rom[addr];
+end
+endmodule
+
+ 
 */
 
 
@@ -34,6 +78,7 @@ RegisterNumber:
 
 ### RTL LOGIC  
 
+![1](https://user-images.githubusercontent.com/95363138/173366716-ffa33853-2341-47f3-89ef-9043b806d4ae.png)
 
 
 
@@ -47,10 +92,12 @@ RegisterNumber:
 
 
 
- 
+ ![2](https://user-images.githubusercontent.com/95363138/173366722-e07901a4-81dc-41e1-b8f8-1df9f0740231.png)
+
 
 
 
 
 
 ### RESULTS 
+Thus the program to design a programmable logical device is done successul.
